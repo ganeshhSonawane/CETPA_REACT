@@ -7,8 +7,8 @@ const Menu = () => {
       <div className="menu">
         <Navbar expand="lg">
           <Nav.Link>
-            <Link to="/todo" className="btn btn-outline-success">
-              ToDo List
+            <Link to="/funtodolist" className="btn btn-outline-success">
+              ToDOLIst
             </Link>
           </Nav.Link>
           <Nav.Link>

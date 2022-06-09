@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './common/Header';
 import Footer from './common/Footer';
 import Menu from './common/Menu';
-import ToDoAssignment from './component/ToDoAssignment';
+import FunToDoComponet from "./component/FunToDoComponent";
 import ComponentModal from './component/ComponentModal';
 import DigitalClock from './component/DigitalClocks';
 import DigitalClockClass from './component/ComponentDigitalClockClass';
@@ -24,10 +24,10 @@ function App() {
             <div className='col-sm-12 col-lg-12 main-wrapper'>
               <Routes>
                 {/*Default route*/}
-                <Route path='/' element={<ToDoAssignment />} />
+                <Route path='/' element={<FunToDoComponet/>} />
                 {/*Default route*/}
+                <Route path="/funtodolist" element={<FunToDoComponet />} />
                 <Route path='/compmodal' element={<ComponentModal />} />
-                <Route path='/todo' element={<ToDoAssignment />} />
                 <Route path='/digiclock' element={<DigitalClock />} />
                 <Route path='/digiclockclass' element={<DigitalClockClass />} />
                 <Route path='/emicalc' element={<EMI />} />
